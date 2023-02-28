@@ -3,7 +3,7 @@ import React from "react"
 export default function Card(props) {
     
     return(
-        <>
+        <div>
             {props.id !=0 && <hr className="separator"/>}
             <div className="card">
                 <img  src={props.imageUrl} className="card__img"/>
@@ -18,6 +18,6 @@ export default function Card(props) {
                     <p className="card__info__desc">{props.description}</p>
                 </div>
             </div> 
-        </>
+        </div>
     )
 }
