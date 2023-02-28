@@ -1,0 +1,119 @@
+@font-face {
+    font-family: ShinGo;
+    src: url(./assets/fonts/AOTFShinGoProRegular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ShinGo;
+    src: url(./assets/fonts/AOTFShinGoProDeBold.otf);
+    font-weight: 700;
+}
+
+:root{
+    --mainColor: #22a6b3;
+    --textColor: #130f40;
+    --linkColor: #95afc0;
+    --backgroundColor: #dff9fb;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ShinGo', sans-serif;
+}
+
+body{
+    background-color: var(--backgroundColor);
+}
+
+.header{
+    background-color: var(--mainColor);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title{
+    color:var(--backgroundColor);
+    font-size: 24px;
+}
+
+.header__icon{
+    width: 40px;
+    margin-left: 16px;
+    fill: var(--backgroundColor);
+}
+
+.separator{
+    max-width: calc(100vw - 80px);
+    margin: auto;
+    border-color: var(--textColor);
+    border-width: 1px;
+    border-top: none;
+}
+
+.card{
+    display: flex;
+    padding: 18px 40px;
+}
+
+.card__img{
+    width: 125px;
+    height: 168px;
+    left: 40px;
+    top: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card__info{
+    margin-left: 20px;
+}
+
+.geoMark{
+    fill: var(--mainColor);
+    margin-right: 4px;
+}
+
+.card__info__location{
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.17em;
+    color: var(--textColor);
+}
+
+.card__info__link{
+    display: inline-block;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration-line: underline;    
+    color: var(--linkColor); 
+}
+
+.card__info__title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--textColor);
+}
+
+.card__info__date{
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--textColor);
+    margin: 10px 0;
+}
+
+.card__info__desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--textColor);
+}
